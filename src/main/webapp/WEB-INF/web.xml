@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
-  <display-name>JavaWeb</display-name>
+  <display-name>BBS Project</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.jsp</welcome-file>
@@ -19,25 +19,5 @@
   	<location>/error/error_500.jsp</location>
   </error-page>
   
-  <context-param>
-  	<param-name>menu</param-name>
-  	<param-value>짬뽕 짜장면 탕수육</param-value>
-  </context-param>
-  
-  <filter>
-  	<filter-name>HangulEncoding</filter-name>
-  	<filter-class>ch10.EncodingFilter</filter-class>
-  </filter>
-  <filter-mapping>
-  	<filter-name>HangulEncoding</filter-name>
-  	<url-pattern>/ch10/*</url-pattern>
-  </filter-mapping>
- <!--   <servlet>
-  	<servlet-name>first</servlet-name>
-  	<servlet-class>ch05.FirstServlet</servlet-class> 
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>first</servlet-name>
-  	<url-pattern>/first</url-pattern>
-  </servlet-mapping> -->
+
 </web-app>
