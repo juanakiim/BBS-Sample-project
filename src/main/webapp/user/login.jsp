@@ -1,23 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>게시판 샘플 프로젝트</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/77ad8525ff.js" crossorigin="anonymous"></script>
-    <style>
-        * { font-family: 'Noto Sans KR', sans-serif; }
-        a { text-decoration: none; }
-    </style>
+    <%@ include file="../common/heading.jsp" %>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container-fluid">
-            <img src="../img/ckworld-logo.png" alt="Logo" style="height:60px;" class="rounded-3 mx-2">
+            <img src="/bbs/img/ckworld-logo.png" alt="Logo" style="height:60px;" class="rounded-3 mx-2">
             <div class="p-2 bg-dark justify-content-center rounded">
                 <img src="https://picsum.photos/1500/200" width="100%">
             </div>
@@ -30,11 +22,11 @@
                 <h3>
                     <strong>로그인</strong>
                     <span style="font-size: 0.6em;">
-                        <a href="#" class="ms-5"><i class="fas fa-user-plus"></i> 회원가입</a>
+                        <a href="/bbs/user/register.jsp" class="ms-5"><i class="fas fa-user-plus"></i> 회원가입</a>
                     </span>
                 </h3>
                 <hr>
-                <form action="#" method="post">
+                <form action="/bbs/user/login" method="post">
                     <table class="table table-borderless">
                         <tr>
                             <td><label for="uid" class="col-form-label">아이디</label></td>
@@ -57,11 +49,5 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-sm bg-light fixed-bottom">
-        <div class="container-fluid justify-content-center">
-            <span class="navbar-text">
-                Copyright &copy; 2021-2022 CK World Corp. All rights reserved.
-            </span>
-        </div>
-    </nav>
-</body>
+    <%@ include file="../common/bottom.jsp" %>
+</body>s
